@@ -1,0 +1,8 @@
+<h1>Events#index</h1>
+
+<% if flash[:notice] %>
+  <p class="flash-notice"><%= flash[:notice] %></p>
+<% end %>
+
+<%= button_to "Create Event A", events_create_event_a_path, method: :get %></br>
+<%= button_to "Create Event B", events_create_event_b_path, method: :get %>
